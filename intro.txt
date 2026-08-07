@@ -1,0 +1,81 @@
+Web development :- 
+	1. create a Website.
+		multiple Files.
+
+	2. create a WebApp.
+		multiple Components.
+
+		a. static website/webapp.
+		b. dynamic website/webapp.
+Job : 
+	Software Developer 
+	Frontend Developer  (UI)
+	Backend Developer   (server)
+	Full-stack Developer (UI + Server + more)
+	MERN-stack Developer (UI + Server)
+	API Developer  (server)
+	React Developer (Frontend)
+	Nodejs Developer (server)
+	QA Engineer 
+
+Basic : 
+	1. HTML
+	2. CSS
+	3. JS
+====================================
+Website : 
+	1. HTML  : structure
+	2. CSS   : design 
+	3. JS    : functionality 
+====================================
+=> What is HTML ?
+-> HTML stands for Hyper text Markup Language.
+
+
+=> use :
+-> create a Structure of Website/Webpage.
+	Webpage : Single HTML File.
+	Website : collection of Webpages/Multiple HTML File.
+====================================
+=> Founder of HTML :-
+-> Tim Berner's Lee.
+
+=> Version of HTML :-
+-> HTML 1.0 (1993)   (1991)
+   HTML 5.0 (2014)
+	5.2 (2017)
+====================================
+
+=> Extension :- 
+	1. '.html' (new)
+	2. '.htm'  (old)
+============================
+HTML : Error X
+
+
+
+SEO : Search Engine Optimisation 
+
+=================================
+Tag : 
+1. Closing Tag.
+	<starting Tag> text </ending Tag>	
+
+2. Unclosing Tag.
+	<starting Tag />
+
+3. Empty Tag.
+	<starting Tag></ending Tag>
+
+
+
+
+
+
+
+
+
+
+
+
+
