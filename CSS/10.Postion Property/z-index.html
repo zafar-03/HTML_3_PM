@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(14, 13, 13);
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 42px;
+            font-family: calibri;
+            position: absolute;
+        }
+        div:nth-child(1){
+            background-color: rgba(255, 0, 0, 0.418);
+            top: 50px;
+            left: 50px;
+            z-index: 0;
+        }
+        div:nth-child(2){
+            background-color: rgb(0, 0, 255);
+            top: 100px;
+            left: 100px;
+            /* z-index: 2; */
+
+        }
+        div:nth-child(3){
+            background-color: rgba(0, 128, 0, 0.415);
+            top: 150px;
+            left: 150px;
+            /* z-index: 1; */
+
+        }
+        div:nth-child(4){
+            background-color: rgba(255, 255, 0, 0.411);
+            top: 200px;
+            left: 200px;
+            z-index: -1;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+</html>

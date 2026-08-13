@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(20, 19, 19);
+        }
+        main{
+            background-color: lightgoldenrodyellow;
+            padding: 50px;
+            display: inline-block;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: calibri;
+            transition: all 1s;
+            position: relative;
+        }
+        main::after{
+            display: none;
+            content: 'Red';
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            padding: 50px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            top: 0px;
+        }
+
+        main:hover{
+            transform: rotateY(180deg);
+        }
+        main:hover::after{
+            display: inline-block;
+            transform: rotateY(180deg);
+        }
+    </style>
+ </head>
+ <body>
+    <main>
+        What is HTML ?
+    </main>
+ </body>
+ </html>
