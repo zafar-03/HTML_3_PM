@@ -1,0 +1,67 @@
+@media screen and (min-width:200px){
+    body {
+        background-color: darkslategray;
+        color: lightyellow;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:500px){
+    body {
+        background-color: rgb(162, 165, 117);
+        color: navy;
+        text-align: center;
+        font-family: cursive;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (min-width:1000px){
+    body {
+        background-color: rgb(21, 21, 21);
+        color: white;
+        text-align: center;
+        font-family: calibri;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 24px;
+    }
+}

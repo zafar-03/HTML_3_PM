@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+                background-color: gainsboro;
+                display: flex;
+                padding: 30px;
+                font-size: 24px;
+                font-family: verdana;
+                color: lemonchiffon;
+                gap: 20px;
+            }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main:nth-child(1) {
+            background-color: darkblue;
+        }
+
+        main:nth-child(2) {
+            background-color: darkred;
+        }
+
+        main:nth-child(3) {
+            background-color: darkslategray;
+        }
+
+        main:nth-child(4) {
+            background-color: dimgray;
+        }
+
+        @media screen and (min-width : 200px) {
+            div{
+                flex-wrap: wrap;
+                height: 800px;
+            }
+            main{
+                flex-basis: 100%;
+            }
+        }
+
+        @media screen and (min-width : 500px) {
+            div{
+                flex-wrap: wrap;
+                height: 800px;
+            }
+            main{
+                flex-basis: 45%;
+            }
+        }
+        @media screen and (min-width : 1000px) {
+            div{
+                flex-wrap: nowrap;
+                height: 300px;
+            }
+            main{
+                flex-basis: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <main>HTML</main>
+        <main>CSS</main>
+        <main>JS</main>
+        <main>PYTHON</main>
+    </div>
+</body>
+
+</html>
