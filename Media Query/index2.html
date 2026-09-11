@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightsteelblue;
+            color: white;
+            height: 500px;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        main:first-child {
+            background-color: darkblue;
+        }
+
+        main:nth-child(2) {
+            background-color: darkmagenta;
+        }
+
+        main:nth-child(3) {
+            background-color: darkslateblue;
+        }
+
+        main:nth-child(4) {
+            background-color: darkgreen;
+        }
+
+        main:last-child {
+            background-color: darkred;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width:1400px) {
+            div {
+                flex-wrap: wrap;
+            }
+
+            main {
+                flex-grow: 1;
+                flex-basis: 15%;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            div {
+                flex-wrap: wrap;
+                height: 700px;
+            }
+
+            main {
+                flex-grow: 1;
+                flex-basis: 26%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+             div {
+                flex-wrap: wrap;
+                height: 1000px;
+            }
+
+            main {
+                flex-grow: 1;
+                flex-basis:42.5%;
+            }
+        }
+
+        @media screen and (max-width:200px) {
+            div {
+                flex-wrap: wrap;
+                height: auto;
+            }
+
+            main {
+                flex-grow: 1;
+                flex-basis:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <main>
+            <img src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVycyUyMGhkfGVufDB8fDB8fHww"
+                alt="">
+        </main>
+        <main>
+            <img src="https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2FsbHBhcGVyJTIwaGR8ZW58MHx8MHx8fDA%3D"
+                alt="">
+        </main>
+        <main>
+            <img src="https://images.unsplash.com/photo-1607024301817-3bbc081205cd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGQlMjBkZXNrdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww"
+                alt="">
+        </main>
+        <main>
+            <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdhbGxwYXBlciUyMDRrfGVufDB8fDB8fHww"
+                alt="">
+        </main>
+        <main>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9M0DTIlcgV0--AfMw_716J4VlM4W4dhD_DDxIEai3FAt5H8GDLnrblO0&s=10"
+                alt="">
+        </main>
+    </div>
+</body>
+
+</html>
+
+<!-- https://templatemo.com/live/templatemo_406_flex -->
