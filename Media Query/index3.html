@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightcyan;
+            padding: 20px;
+            color: white;
+            font-size: 32px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        main:first-child{
+            background-color: darkblue;
+        }
+        main:nth-child(2){
+            background-color: darkred;
+        }
+        main:nth-child(3){
+            background-color: darkslateblue;
+        }
+        main:nth-child(4){
+            background-color: darkviolet;
+        }
+        main:last-child{
+            background-color: dimgray;
+        }
+
+        @media screen and (min-width : 1400px) {
+            div{
+                height: 700px;
+            }
+            main{
+                flex-grow: 1;
+            }
+        }
+
+        @media screen and (min-width:1200px) and (max-width:1400px) {
+            div{
+                height: 700px;
+            }
+            main:nth-child(even){
+                flex-grow: 1;
+            }
+            main:nth-child(odd){
+                flex-grow: 2;
+            }
+        }
+
+        @media screen and (min-width:1024px) and (max-width:1200px) {
+            div{
+                height: 1000px;
+                flex-wrap: wrap;
+            }
+            main{
+                flex-basis: 46%;
+                flex-grow: 1;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            div{
+                height: 1200px;
+                flex-wrap: wrap;
+            }
+            main{
+                flex-basis: 26%;
+                flex-grow: 1;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:768px) {
+            div{
+                height: 1200px;
+                flex-wrap: wrap;
+            }
+            main:nth-child(odd){
+                flex-basis: 26%;
+                flex-grow: 1;
+            }
+            main:nth-child(even){
+                flex-basis: 46%;
+                flex-grow: 1;
+            }
+        }
+        @media screen  and (max-width:576px) {
+            div{
+                height: 500px;
+                flex-wrap: wrap;
+            }
+            main{
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <main>1</main>
+        <main>2</main>
+        <main>3</main>
+        <main>4</main>
+        <main>5</main>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+1400
+1200
+1000
+500
+200
+
+large desktop : min 1400px  max .....
+desktop       : min 1200px  max 1400px
+laptop        : min 1024px  max 1200px
+tablat        : min 768px   max 1024px
+phone         : min 576px   max 768px 
+small device  : min 0...    max 576px
+.
+
+-->
